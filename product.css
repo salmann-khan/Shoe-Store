@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Google Sans", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --bg-color : #ffffff;
+    --text-color : #1f1f38;
+    --main-font: 2.2rem;
+    --p-font: 1.1rem;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+header{
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 25px 8%;
+    background: var(--bg-color);
+    box-shadow: 0 2px 18px 0 rgba(129, 162, 182, 0.9);
+    transition: .3s;
+}
+.logo{
+    color: var(--text-color);
+    font-size: var(--main-font);
+    font-weight: 800;
+    line-height: 0.8;
+    transition: .3s ;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: all .40s ease-in;
+    font-size: var(--p-font);
+    color: var(--text-color);
+    font-weight: 600;
+    padding: 10px 15px;
+}
+.navbar a:hover{
+    background: var(--text-color);
+    color: var(--bg-color);
+    border-radius: 5px;
+}
+.icons{
+    display: inline-block;
+}
+.icons i{
+    color: var(--text-color);
+    font-size: 24px;
+    margin-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
