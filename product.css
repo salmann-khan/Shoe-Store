@@ -154,9 +154,80 @@ section{
     color: var(--text-color);
     line-height: 30px;
 }
+.contact{
+    padding: 80px 17%;
+    background: var(--text-color);
+}
+.main-contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, auto));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+.contact-content li{
+    margin-bottom: 15px;
+}
+.contact-content li a{
+    display: block;
+    color: var(--bg-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+    transition: all 0.4s ease-in;
+}
+.contact-content li a:hover{
+    transform: translateX(-5px);
+}
 
+.action form{
+    text-align: center;
+}
+.action form input[type="text"]{
+    width: 400px;
+    max-width: 100%;
+    padding: 12px 15px;
+    color: #515151;
+    background-color: var(--bg-color);
+    outline: none;
+    border: none;
+    margin: 0px 10px 20px 0px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.action form input[type="submit"]{
+    padding: 10px 35px;
+    color: var(--bg-color);
+    background-color: var(--text-color);
+    outline: none;
+    border: none;
+    margin: 0px 10px 20px 0px;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+}
+.action form input[type="submit"]:hover{
+    border: 2px solid var(--bg-color);
+    color: var(--bg-color);
+    background: var(--text-color);
+}
 
-
+@media screen and (max-width: 700px){
+    .navbar{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logo{
+        line-height: 0.4;
+    }
+}
+@media screen and (max-width:620) {
+    header{
+        position: relative;
+    }
+    .icons i{
+        margin-bottom: 14px ;
+    }
+    
+}
 
 
 
