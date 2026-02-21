@@ -214,12 +214,13 @@ section{
     .navbar{
         flex-wrap: wrap;
         justify-content: center;
+        z-index: -1;
     }
     .logo{
         line-height: 0.4;
     }
 }
-@media screen and (max-width:620) {
+@media screen and (max-width:620px) {
     header{
         position: relative;
     }
